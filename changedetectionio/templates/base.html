@@ -40,11 +40,11 @@
       <div class="home-menu pure-menu pure-menu-horizontal" id="nav-menu">
 
         {% if has_password and not current_user.is_authenticated %}
-          <a class="pure-menu" href="https://wecantest.com" rel="noopener">
-            <strong>Catch</strong>@WeCanTest</a>
+          <a class="pure-menu-link" href="https://wecantest.com" rel="noopener">
+            <strong>CATCH</strong>@WeCanTest</a>
         {% else %}
-          <a class="pure-menu" href="{{url_for('watchlist.index')}}">
-            <strong>Catch</strong>@WeCanTest</a>
+          <a class="pure-menu-link" href="{{url_for('watchlist.index')}}">
+            <strong>CATCH</strong>@WeCanTest</a>
         {% endif %}
         {% if current_diff_url %}
           <a class="current-diff-url" href="{{ current_diff_url }}">
